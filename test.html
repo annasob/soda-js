@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test page</title>
+    <script src="VideoSequencer.js"></script>
+    <script src="timebar.js"></script>
+    <script type="text/javascript">
+      addEventListener('DOMContentLoaded', function(){ 
+        
+        var timebar = new Timebar(125);    
+        timebar.draw(700,200,document.getElementById("time"),document.getElementById("video1"));
+       
+      }, false);
+    </script>
+</head>
+<body>
+    <div>
+    
+        <div>
+            <video style="display: none" src="videos/coolcar.ogv" width="250px" id="video1" ></video>
+        </div>
+        
+        <div id="time" height="200" width="400"></div>
+        
+    </div>
+</body>
+</html>
